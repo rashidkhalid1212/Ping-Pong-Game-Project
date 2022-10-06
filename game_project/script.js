@@ -4,6 +4,10 @@ let ball = document.querySelector(".ball1");
 let board = document.querySelector(".board");
 let boardBounds = board.getBoundingClientRect();
 
+document.addEventListener("keydown", function(e){
+    console.log("chal rha hai");
+})
+
 function moveBall(){
     let ballcord = ball.getBoundingClientRect();
     let ballTop = ballcord.top;
@@ -25,4 +29,4 @@ function moveBall(){
     ball.style.left = x==true?ballLeft+1+"px":ballLeft-1+"px";
     requestAnimationFrame(moveBall);  
 }
-requestAnimationFrame(moveBall);
+// requestAnimationFrame(moveBall);
