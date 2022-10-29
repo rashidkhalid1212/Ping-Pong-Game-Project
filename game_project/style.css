@@ -39,9 +39,9 @@ body{
 .paddle{
     height: 120px;
     width: 15px;
-    background-color: black;
+    background-color: #b465da;
     position: fixed;
-    border-radius: 12px;
+    border-radius: 3px;
 }
 
 .left{
@@ -51,4 +51,23 @@ body{
 .right{
     top : 40vh;
     right: 12vw;
+}
+
+.fa-circle{
+    color: #2ecc71;
+    font-size: 2rem;
+}
+
+.scoreboard{
+    display: flex;
+    height: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 1 1;
+}
+
+.separator{
+    width: 4px;
+    height: 70%;
+    background-color: black;
 }
